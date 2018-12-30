@@ -24,6 +24,8 @@ create tunnel (-N required)
 ssh -N -L 30000:target-host:20000 root@container-host -p 10022
 ```
 
+User -> local:30000 (ssh) -> container-host:10022 (sshd) -> target-host:20000 (target service)
+
 - 20000: arbitrary port for communication between target_host and ssh_tunnel containers
 - 30000: arbitrary port for listen to connection for using tunnel
 - 10022: arbitrary port for SSH
