@@ -17,5 +17,7 @@ RUN apt-get update \
   && rm -rf /var/tmp/*
 
 COPY . $APP_ROOT
+RUN chmod +x $APP_ROOT/boot.sh
+
 EXPOSE 22
-CMD ["/root/boot.sh"]
+CMD $APP_ROOT/boot.sh
