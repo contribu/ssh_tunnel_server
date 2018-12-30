@@ -1,3 +1,9 @@
+## What's this?
+
+A docker image for wrapping arbitrary service (e.g. VNC, zabbix, ...) using ssh tunneling for security.
+
+User -> ssh tunneling -> arbitrary service
+
 ## Usage
 
 docker-compose.yml example
