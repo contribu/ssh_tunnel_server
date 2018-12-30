@@ -14,4 +14,5 @@ RUN apt-get update \
   && mkdir -p /var/run/sshd
 
 COPY . $APP_ROOT
+EXPOSE 22
 CMD ["/root/boot.sh"]
